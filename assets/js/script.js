@@ -4,10 +4,12 @@ $("#currentDay").text(currentDay);
 
 var currentHour = parseInt(moment().format("H"));
 
-// functions
-audit()
-workDay()
 
+//  jQuery!!! will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
+$(document).ready(function(){  
+
+// function
+  workDay()
 
 // workday function to save the input values and shows on the scheduler even when you refresh the page
 function workDay() {
@@ -26,9 +28,9 @@ function workDay() {
 $(".btnSave").on("click", function() {                
   console.log($("time").parent()); 
 // highlights the sibling and next elements
-    $("#div3").siblings().css("border", "1px solid red")
-    $("#div3").next().css("border", "1px solid blue")
-    $("#div2").siblings().css("border", "1px solid yellow")
+    $("#div3").siblings().css("border", "1px solid red") // this is for testing purpose
+    $("#div3").next().css("border", "1px solid blue")   // this is for testing purpose
+    $("#div2").siblings().css("border", "1px solid yellow")  // this is for testing purpose
   var timeSection = $(this).siblings(".time").text();
   var formInput = $(this).siblings(".formInput").val();
   console.log(this); 
@@ -55,10 +57,12 @@ function audit() {
         $(this).addClass("list-group-item-danger");
        }
    })
-
 };
 
+// function
+audit()
 
+});
 
 
 
