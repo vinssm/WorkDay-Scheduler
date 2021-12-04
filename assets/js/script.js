@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 // workday function to save the input values and shows on the scheduler even when you refresh the page
 function workDay() {
-       $(".time").each(function() {
+       $(".time").map(function() {
         var presentTime = $(this).text();
         var presentInput = localStorage.getItem(presentTime);
             console.log(this);
@@ -47,7 +47,7 @@ function audit() {
     // convert to moment object 
      var time = moment().hours();
 // for each input we are checking time and adding the color class
-   $(".formInput").each(function() {
+   $(".formInput").map(function() {
        var presentTime = parseInt($(this).attr("taskID"));
        if (presentTime > time) {
         $(this).addClass("list-group-item-primary");
