@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- css links for external and internal starts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- css links for external and internal ends -->
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+
+  <div>
+    <!-- Top header starts -->
+    <header class="col-12 w-100 bg-white mt-5 border-bottom border-3">
+        <h1 class="text-center display-3"> Work Day Scheduler </h1>          
+            <p class="text-center mb-0"> A simple calender app for scheduling your work day</p>
+            <p class="text-center" id="currentDay"></p>
+    </header>
+    <!-- Top header ends -->
+
+    <!-- work day scheduler starts here -->
+        <div class="container mb-5">
+            <div class="row">
+              <!-- time -->    
+              <div id="div3" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 9AM </div>  
+              <!-- input box to capture user-input -->            
+              <input taskID="9" class="form-control leftline rightline formInput present col-md-10" type="text">
+              <div class="col-sm-1 btnSave rtd"><span class="oi oi-document btn-save"></span></div>
+            </div>
+
+               <div class="row">
+                 <!-- time --> 
+                  <div id="div2" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 10AM </div>   
+                  <!-- input box to capture user-input -->                   
+                  <input id="text10" class="form-control leftline rightline formInput present col-md-10" type="text">
+                  <div class="col-sm-1 btnSave rtd" taskID=10><span class="oi oi-document btn-save"></span></div>
+                </div>
+
+                <div class="row">
+                  <!-- time --> 
+                    <div id="div2" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 11AM </div>
+                    <!-- input box to capture user-input -->    
+                    <input id="text11" class="form-control leftline rightline formInput present col-md-10">
+                    <div class="col-sm-1 btnSave rtd" taskID=11><span class="oi oi-document btn-save"></span></div>
+                  </div>
+
+                <div class="row">
+                  <!-- time --> 
+                    <div id="div2" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 12PM </div>
+                    <!-- input box to capture user-input -->    
+                    <input id="text12" class="form-control leftline rightline formInput present col-md-10">
+                    <div class="col-sm-1 btnSave rtd" taskID=12><span class="oi oi-document btn-save"></span></div>
+                  </div>
+
+               <div class="row">
+                 <!-- time --> 
+                  <div id="div2" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 1PM </div>
+                  <!-- input box to capture user-input -->    
+                  <input id="text13" class="form-control leftline rightline formInput present col-md-10">
+                  <div class="col-sm-1 btnSave rtd" taskID=13><span class="oi oi-document btn-save"></span></div>
+                </div>
+
+                <div class="row">
+                  <!-- time --> 
+                    <div id="div2" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 2PM </div>
+                    <!-- input box to capture user-input -->    
+                    <input id="text14" class="form-control leftline rightline formInput present col-md-10">
+                    <div class="col-sm-1 btnSave rtd" taskID=14><span class="oi oi-document btn-save"></span></div>
+                </div>
+
+                <div class="row">
+                  <!-- time --> 
+                    <div id="div2" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 3PM </div>
+                    <!-- input box to capture user-input -->    
+                    <input id="text15" class="form-control leftline rightline formInput present col-md-10">
+                    <div class="col-sm-1 btnSave rtd" taskID=15><span class="oi oi-document btn-save"></span></div>
+                </div>
+
+                <div class="row">
+                  <!-- time --> 
+                  <div id="div2" class="col-sm-1 line pt-4 pl-sm-5 font-weight-bold time"> 4PM </div>
+                  <!-- input box to capture user-input -->    
+                  <input id="text16" class="form-control leftline rightline formInput present col-md-10">
+                  <div class="col-sm-1 btnSave rtd" taskID=16><span class="oi oi-document btn-save"></span></div>
+                </div>
+
+                <div class="row">
+                  <!-- time --> 
+                  <div id="div2" class="col-sm-1 line lineb pt-4 pl-sm-5 font-weight-bold time"> 5PM </div>
+                  <!-- input box to capture user-input -->    
+                  <input id="text17" class="form-control leftline rightline formInput present col-md-10">
+                  <div class="col-sm-1 btnSave rtd" taskID=17><span class="oi oi-document btn-save"></span></div>
+                </div>
+              <!-- work day scheduler ends here --> 
+      </div>
+      
+
+
+
+    <!-- js, popper js, bootstrap, jquery, moment script links for external and internal starts -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <!-- js, popper js, bootstrap, jquery, moment script links for external and internal ends -->
+</body>
+
+</html>

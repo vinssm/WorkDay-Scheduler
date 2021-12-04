@@ -1,0 +1,92 @@
+  /* color */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --third-color: #08c1eb;
+    --fourth-color: #ff18f3;
+  }
+  
+header {
+    font-family: play;
+}
+
+header p {
+    font-family: play;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.border-3 {
+    border-width:10px !important;
+    margin-bottom: 30px;
+}
+
+
+.row {
+    /* height: 80px; */
+    display: flex;
+    flex-wrap: nowrap;
+    border-top: 1px solid var(--primary-color);
+}
+
+
+.line { 
+    background-color: var(--primary-color);
+    border-top: 1px dashed var(--secondary-color);
+    color: var(--secondary-color);
+} 
+
+.lineb { 
+    border-bottom: 1px dashed var(--secondary-color);
+} 
+
+
+.leftline{
+    border-left: 1px solid var(--secondary-color);
+}
+
+.rightline{
+    border-right: 1px solid var(--secondary-color);
+}
+
+.formInput{
+    height: 80px;
+}
+
+  /* Focus */
+.form-control:focus{
+    border-color: var(--secondary-color);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .rtd{
+    background-color: var(--third-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 1px solid var(--secondary-color);
+  }
+
+
+  .btn-save {
+    transition: all .5s ease-out;  
+    background-size: 1px 100px;
+    width: 30px;
+    margin-top: 40px;
+    margin-left: 28px;
+    height: 30px;
+    cursor: pointer;    
+  }
+
+  /* icon hover */
+  .oi:hover {
+    color: #9A1A4A;
+    position:relative;
+    top:-25px;
+    width:500px;
+    height:20px;
+    display:block;
+    z-index:999;
+  transition: all .5s ease-in-out;  
+}
+  
+
